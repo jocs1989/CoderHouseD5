@@ -1,0 +1,106 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+     <head>
+       <meta charset="UTF-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Productos</title>
+       <link
+         rel="stylesheet"
+         href="../../static/css/bootstrap.min.css"
+         crossorigin="anonymous"
+       />
+       <link
+         rel="stylesheet"
+         href="../../static/js/bootstrap.bundle.min.js"
+         crossorigin="anonymous"
+       />
+       <link
+         rel="stylesheet"
+         href="../../static/js/jquery.min.js"
+         crossorigin="anonymous"
+       />
+       <script
+         src="../../static/css/all.css"
+         crossorigin="anonymous"
+       ></script>
+       <script
+         src="../../static/css/font-awesome.css"
+         crossorigin="anonymous"
+       ></script>
+     </head>
+     <body>
+       <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+       <div class="container-fluid"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar20">
+           <p class="navbar-brand text-white mb-0">
+             <i class="fa d-inline fa-lg fa-stop-circle"></i> ECommerce </p>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar20">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item"> <a class="nav-link" href="/">Registro</a> </li>
+             <li class="nav-item"> <a class="nav-link" href="/api/productos">Productos</a> </li>
+             
+           </ul>
+           <p class="d-none d-md-block lead mb-0 text-white"> <i class="fa d-inline fa-lg fa-stop-circle"></i> <b> </b> </p>
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item mx-1"> <a class="nav-link" href="#">
+                 <i class="fa fa-github fa-fw fa-lg"></i>
+               </a> </li>
+             <li class="nav-item mx-1"> <a class="nav-link" href="#">
+                 <i class="fa fa-dropbox fa-fw fa-lg"></i>
+               </a> </li>
+             <li class="nav-item mx-1"> <a class="nav-link" href="#">
+                 <i class="fa fa-bitbucket fa-fw fa-lg"></i>
+               </a> </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+       </header>
+   
+       <div class="container d-flex justify-content-center my-5">
+        <div class="row my-2 mx-2 main">
+            <!--left-column-->
+            <div class="col-md-4 col-12 mycol">
+                <!--image-->
+                <img src="public/img/rtaImage.jpeg"width="100%" height="100%">
+            </div>
+            <!--right-column-->
+            <div class="col-md-8 col-12 xcol">
+                <h2 class="title pt-5 pb-3">Agrega tu producto</h2>
+                <form  action="/api/productos" method="post" class="myform" >
+                    <div class="row rone">
+                        <div class="form-group col-md-6 fone py-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required name="title" id="title">
+                        </div>
+                        
+                    </div>
+                    <div class="row rtwo">
+                        <div class="form-group col-md-6 fthree py-3">
+                            <input  class="form-control jk" placeholder="Pricio" pattern="^\d*(\.\d{0,2})?$" required name="price" min="1" id="price">
+                        </div>
+                        
+                    </div>
+                    <div class="row rthree">
+                        <div class="form-group col-md-6 ffive py-3">
+                            <input type="text" class="form-control" placeholder="URL" required name="thumbnail" id="thumbnail">
+                        </div>
+                        
+                    </div>
+                    <div class="row rfour">
+                        <div class="form-group col-md-6 fseven py-3">
+                            
+                            <div class="form-group col-md-6 fseven py-3">
+                            <button type="submit" class="btn btn-primary"><span>Agregar</span></button>
+                        </div>
+                        </div>
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     </body>
+   </html>

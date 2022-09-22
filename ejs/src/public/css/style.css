@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background-color:#ced4da;
+    ;
+}
+figure{
+    margin-left:100px ;
+    margin-right:auto;
+}
+.menu {
+    display: flex;
+    
+    margin-top: 100px;
+    margin-left:200px;
+    margin-right:200px;
+    height: 350px;
+
+}
+.menu__baner{
+    width: 35%;
+    background-color: #f60;
+    position: 1;
+    
+}
+.menu__formulario{
+    width: 65%;
+    background-color: white;
+    position: 2;
+}
