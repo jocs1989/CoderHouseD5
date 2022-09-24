@@ -14,10 +14,10 @@ Instalar node y git
 ## Intalacion
 git clone https://github.com/jocs1989/CoderHouseD5.git
 cambiarse a cualquier carpeta de la siguiente
-pug , hbs o jes , una vez dentro de ellas ejecutar npm i && nmp start,
+pug , hbs o jes , una vez dentro de ellas ejecutar npm i && nmp run start,
 ## Ejemplo hbs en Linux 
 - cd CoderHouseD5
 - cd hbs
 - npm i
-- npm start
+- npm run start
 
